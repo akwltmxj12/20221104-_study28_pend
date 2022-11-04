@@ -38,7 +38,7 @@
 	</beans:bean>
 	
 	
-	<context:component-scan base-package="pend.auurius.study28.dao" />
+	<context:component-scan base-package="pend.auurius.study28" />
 	
 	
 	
