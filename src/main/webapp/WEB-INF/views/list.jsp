@@ -16,8 +16,8 @@
 			<th>글쓴이</th>
 			<th>한줄내용</th>
 			<th>삭제</th>
-		</tr><!-- 순서대로 리스트에서 끄집어내어서 이름을 갖다쓴다는것 -->
-		<c:forEach items="${list}" var="dto">		
+		</tr>
+		<c:forEach items="${list}" var="dto">
 		<tr align="center" height="40">
 			<td>${dto.mid }</td>
 			<td>${dto.mwriter }</td>

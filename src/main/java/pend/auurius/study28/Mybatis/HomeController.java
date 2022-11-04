@@ -36,7 +36,7 @@ public class HomeController {
 		
 		ArrayList<ContentDto> dtos = dao.listDao();
 		
-		model.addAttribute("list", dtos);	// list란 이름으로 모델에 옮긴다.
+		model.addAttribute("list", dtos);
 		
 		return "list";
 	}
@@ -53,15 +53,13 @@ public class HomeController {
 		String mwriter = request.getParameter("mwriter");
 		String mcontent = request.getParameter("mcontent");
 		
-		dao.writeDao(mwriter, mcontent); // 만들어둔 메소드 불러오기.
-		
+		dao.writeDao(mwriter, mcontent);
 		
 		return "redirect:list";
 	}
 	
 	@RequestMapping(value = "delete")
 	public String delete(HttpServletRequest request) {
-		
 		
 		String mid = request.getParameter("mid");
 		
@@ -70,4 +68,3 @@ public class HomeController {
 		return "redirect:list";
 	}
 }
-
